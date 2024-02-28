@@ -1,0 +1,24 @@
+.from{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    margin-top: 40px;
+}
+
+
+.butun{
+    
+   text-align: center;
+   width: 700px;
+   border-radius: 20px;
+    height: 620px ;
+    padding: 20px;
+   border: 1px solid rgb(136, 136, 136);
+    
+
+}
+.img{
+    border-radius: 50%;
+    
+}

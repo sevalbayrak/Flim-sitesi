@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { Route , Routes } from 'react-router-dom';
+import Giris from './paht/Giris';
+
+import {Toaster} from'react-hot-toast'
+import FlimEkle from './paht/FlimEkle';
+import Home from './paht/Home';
+import Arama from './paht/Arama';
+import Detay from './paht/Detay';
+import Katogeri from './paht/Katogeri';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Toaster/>
+      <Routes>
+      <Route path='/' element={<Home/>}/>
+        <Route path='/giris' element={<Giris/>}/>
+        <Route path='/ekle' element={<FlimEkle/>}/>
+        <Route path='/aramalar/:isim' element={<Arama/>}/>
+        <Route path='/deyat/:id' element={<Detay/>}/>
+        <Route path='/katogeri/:name' element={<Katogeri/>}/>
+      </Routes>
+   
     </div>
   );
 }

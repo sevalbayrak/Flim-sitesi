@@ -1,0 +1,9 @@
+.baslik{
+    display: flex;
+   justify-content: center;
+}
+.bulunan-isim{
+    margin-top: -56px;
+    margin-left: 20px;
+    color: aliceblue;
+}
